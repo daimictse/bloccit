@@ -1,0 +1,26 @@
+{
+  "name": "bloccit",
+  "version": "1.0.0",
+  "description": "A Reddit-like application for users to discuss and share content",
+  "main": "(src/server.js)",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine",
+    "start": "node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.3.0",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+<<<<<<< HEAD
+    "cryptiles": "^4.1.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.4"
+=======
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+>>>>>>> routing-controller-view-checkpoint
+  }
+}
