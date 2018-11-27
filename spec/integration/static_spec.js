@@ -20,6 +20,19 @@ describe("routes : static", () => {
         done();
       });
     });
+  });
+  describe("GET /about", () => {
 
+//#2 making sure requesting the server using this route was successful = code 200
+  it("should return status code 200 and have 'About Us' in the body of the response", () => {
+    request.get(base+"about", (err, res, body) => {
+       expect(res.statusCode).toBe(200);
+       expect(body).toContain("About Us");
+
+//#4 Need to call done here because expect() won't be made before the test finishes
+// If no expect(), Jasmine assumes the test is successful
+        done();
+      });
+    });
   });
 });
