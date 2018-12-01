@@ -10,7 +10,7 @@ describe("routes : static", () => {
   describe("GET /", () => {
 
 //#2 making sure requesting the server using this route was successful = code 200
-  it("should return status code 200 and have 'Welcome to Bloccit' in the body of the response", () => {
+  it("should return status code 200 and have 'Welcome to Bloccit' in the body of the response", (done) => {
     request.get(base, (err, res, body) => {
        expect(res.statusCode).toBe(200);
        expect(body).toContain("Welcome to Bloccit");
