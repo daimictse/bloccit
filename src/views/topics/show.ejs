@@ -29,10 +29,18 @@
       <hr>
 
       <h1>Flair</h1>
-      <% topic.flairs.forEach((flair) => { %>
-        <p><%= flair.name %></p>
-        <p><%= flair.color %></p>
-      <% }) %>
+      <% if (topic.flair) { %>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p><%= topic.flair.name %></p>
+            </li>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item">
+              <p><%= topic.flair.color %></p>
+          </li>
+        </ul>
+      <% } %>
     </main>
 
     <% include ../static/partials/baseScripts.ejs %>

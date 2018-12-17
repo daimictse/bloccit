@@ -34,7 +34,7 @@ module.exports = {
         as: "posts"
       }, {
         model: Flair,
-        as: "flairs"
+        as: "flair"
       }]
     })
     .then((topic) => {
@@ -52,7 +52,6 @@ module.exports = {
       callback(null, topic);
     })
     .catch((err) => {
-      console.log("QUERIES ERROR: "+err);
       callback(err);
     })
   },
