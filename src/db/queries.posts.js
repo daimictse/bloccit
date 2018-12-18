@@ -37,7 +37,6 @@ module.exports = {
       if(!post){
         return callback("Post not found");
       }
-
       post.update(updatedPost, {
         fields: Object.keys(updatedPost)
       })
@@ -49,5 +48,5 @@ module.exports = {
       });
     });
   }
-    
+
 }
