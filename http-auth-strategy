@@ -1,0 +1,5 @@
+There are HTTP Basic and Digest authentication strategies.
+
+The HTTP Basic authentication strategy simply uses username and password to prove the authentication. It doesn't require cookies and sessions, and HTTP is not encrypted in any way. So, it's not a secured strategy and should not be used in this base form.
+
+On the other hand, The HTTP Digest authentication strategy uses the hashed form of username and password. In addition, it accepts an optional validate callback that receives nonce-related parameters that can be further inspected to determine if the request is valid. So, it's a secured strategy to transfer credentials and provide authentication.
